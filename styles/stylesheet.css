@@ -1,0 +1,172 @@
+*{box-sizing: border-box;}
+
+header {
+  background-image: url(/images/header-image.jpg);
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+	color: rgb(126, 170, 71) ;
+	font-size: 20px;
+	text-align: left;
+  background-size: auto;
+
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header img {
+  width: 30%;
+}
+
+nav {
+  text-decoration-color:rgb(19, 53, 83);
+  background-color: rgb(233, 233, 233) ;
+  padding: 1rem;
+  padding-left: 10em;
+  text-decoration: none;
+}
+
+body{
+  font-family: arial,sans-serif;
+  margin: 0;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  align-content: center;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.top-bar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.top-bar img{
+  width: 60%;
+}
+
+.wrapper{
+  display: grid;
+  grid-row:2;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding-bottom: 3em;
+}
+
+.wrapper img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:70%;
+
+}
+
+.wrapper article{
+  display: grid;
+  border: rgb(233, 233, 233) solid 1px;
+  padding: 1em;
+}
+
+.wrapper a {
+  text-decoration: none;
+  background-color:rgb(126, 170, 71);
+  border-radius: 2px;
+  padding: .25em;
+  color: white;
+  text-align: center;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1em;
+  padding-bottom: 3em;
+
+
+}
+.wrapper2 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:70%;
+
+}
+
+.wrapper2 article{
+  display: grid;
+  border: rgb(233, 233, 233) solid 1px;
+  padding: 1em;
+}
+
+.wrapper2 a {
+  text-decoration: none;
+  background-color:rgb(126, 170, 71);
+  border-radius: 2px;
+  padding: .25em;
+  color: white;
+  text-align: center;
+}
+
+.piper {
+  display: grid;
+  grid-column: 4;
+  grid-row: 4;
+
+}
+
+
+.more-dogs {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 3em;
+
+}
+
+.more-dogs a {
+  background-color: rgb(233, 233, 233);
+  border-radius: 2px;
+  padding: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: rgb(19, 53, 83);
+
+}
+
+footer {
+  justify-content: center;
+  background-color: rgb(19, 53, 83);
+  color: white;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-size: 10px;
+}
+
+footer p {
+  padding-top: 1em;
+}
+
+
+
+footer a {
+  color: white;
+  padding-top: 1em;
+}
+
+footer img {
+  width: 20%;
+
+}
