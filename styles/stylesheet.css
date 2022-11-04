@@ -11,6 +11,10 @@ header {
   background-size: auto;
 
 }
+#murphy {
+  visibility: hidden;
+  font-size: 1px;
+}
 
 
 a{
@@ -18,12 +22,33 @@ a{
   font-weight: bold;
 }
 
+button {
+  font-weight: bold;
+  font-size: 15px;
+  background-color:rgb(126, 170, 71);
+  border-radius: 2px;
+  border-style: none;
+  padding: .25em;
+  color: white;
+  outline: inherit;
+  text-align: center;
+  cursor:pointer;
+
+}
+
+img {
+  cursor: pointer;
+}
+
+
 header img {
   width: 300px;
   object-fit contain;
 }
 
 nav {
+  font-weight: bold;
+  text-decoration: none;
   color:rgb(19, 53, 83);
   background-color: rgb(233, 233, 233) ;
   padding: 1rem;
@@ -42,23 +67,25 @@ main {
   padding-right: 10em;
 }
 
-.top-bar{
+.row-0{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-.top-bar img{
-  width: 60%;
+.top-bar {
+  grid-column: 2;
+  width: 80%;
+  line-height: 2;">
+
 }
 
 .wrapper{
   display: grid;
-  grid-row:2;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
-  padding-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom:3em;
 }
 
 .wrapper img {
@@ -87,7 +114,8 @@ main {
 .wrapper2 {
   display: grid;
   grid-gap: 1em;
-  padding-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom:3em;
 
 
 }
@@ -108,19 +136,21 @@ main {
 .row-1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 
 }
 
 .row-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
+  grid-gap: 1em;
 
 }
 
 .row-3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 }
 
 .wrapper2 a {
