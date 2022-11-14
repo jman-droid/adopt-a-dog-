@@ -2,34 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ADOPTADOG</title>
-
+    <title>Adopt A Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap" rel="stylesheet">
+    <script src="javascript/dog-info.js"charset="utf-8"></script>
 
   </head>
 
   <body>
 
-    <header>
-        <img src="images/adoptadog-logo.svg" alt="">
-        <p><i>Seattle’s premiere dog adoption agency</i></p>
+  <div class="container">
 
-    </header>
+      <header>
+        <div class="header-container">
+          <div class="header-logo">
+              <img src="images/adoptadog-logo.svg" alt="">
+              <h1>Seattle’s premiere dog adoption agency</h1>
+          </div>
+          <div class="checkout">
+              <div class="cash-cart">
+                <img src="images/cart-icon.svg" alt="">
+                <p>$123.45</p>
+              </div>
+          </div>
+        </div>
+      </header>
 
-    <nav>
-      <a href="index.html">Home /</a>
-      <a href="dogs.html">Dogs /</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home /</a>
+        <a href="dogs.html">Dogs /</a>
+        <a href="blog.html">Blog</a>
+      </nav>
 
 
   <main>
 
-    <div class="wrapper2">
+    <div class="wrapper">
 
-        <div class="row-1">
 
-          <article class="murphy">
+          <article class="dog-card">
             <img src="images/murphy-card.jpg" alt="">
             <h3>Murphy</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -37,7 +50,7 @@
             <a href="dogs.html">Adopt</a>
           </article>
 
-          <article class="poppy">
+          <article class="dog-card">
               <img src="images/poppy-card.jpg" alt="">
               <h3>Poppy</h3>
               <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -45,7 +58,7 @@
               <a href="dogs.html">Adopt</a>
           </article>
 
-          <article class="jack">
+          <article class="dog-card">
             <img src="images/jack-card.jpg" alt="">
             <h3>Jack</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -53,7 +66,7 @@
             <a href="dogs.html">Adopt</a>
           </article>
 
-          <article class="duffy">
+          <article class="dog-card">
             <img src="images/duffy-card.jpg" alt="">
             <h3>Duffy</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -61,11 +74,9 @@
             <a href="dogs.html">Adopt</a>
           </article>
 
-       </div>
 
 
-       <div class="row-2">
-          <article class="">
+          <article class="dog-card">
             <img src="images/lucas-card.jpg" alt="">
             <h3>Lucas</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -73,7 +84,7 @@
             <a href="dogs.html">Adopt</a>
           </article>
 
-          <article class="Jake">
+          <article class="dog-card">
             <img src="images/jake-card.jpg" alt="">
             <h3>Jake</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -81,7 +92,7 @@
             <a href="dogs.html">Adopt</a>
           </article>
 
-          <article class="Angus">
+          <article class="dog-card">
             <img src="images/angus-card.jpg" alt="">
             <h3>Angus</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -90,19 +101,17 @@
           </article>
 
 
-          <article class="Violet">
+          <article class="dog-card">
             <img src="images/violet-card.jpg" alt="">
             <h3>Violet</h3>
             <p><strong>Cost to adopt:</strong> $123.45</p>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
             <a href="dogs.html">Adopt</a>
           </article>
-      </div>
 
 
-      <div class="row-3">
 
-        <article class="piper">
+        <article class="dog-card">
           <img src="images/piper-card.jpg" alt="">
           <h3>Piper</h3>
           <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -111,7 +120,7 @@
 
 
         </article>
-        <article class="Maximus">
+        <article class="dog-card">
           <img src="images/maximus-card.jpg" alt="">
           <h3>Maximus</h3>
           <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -120,7 +129,7 @@
 
 
         </article>
-        <article class="Luna">
+        <article class="dog-card">
           <img src="images/luna-card.jpg" alt="">
           <h3>Luna</h3>
           <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -130,7 +139,7 @@
 
         </article>
 
-        <article class="Stella">
+        <article class="dog-card">
           <img src="images/stella-card.jpg" alt="">
           <h3>Stella</h3>
           <p><strong>Cost to adopt:</strong> $123.45</p>
@@ -139,12 +148,7 @@
 
 
         </article>
-
       </div>
-
-
-   </div>
-
   </main>
 
 
@@ -163,6 +167,6 @@
         <p class="copyright"> © 2022 Adoptadog, LLC | Seattle, WA </p>
 
       </footer>
-
+    </div>
   </body>
 </html>
