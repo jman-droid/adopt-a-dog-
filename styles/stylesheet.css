@@ -3,24 +3,29 @@
 
 
 header {
+  background: -moz-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6-15 */
   background-image: url(/images/header-image.jpg);
-  background: cover;
   background-repeat: no-repeat;
-  max-height: 420px;
+  background-position: top;
+  background-size: cover;
+  max-height: 350px;
+
+  padding: 5em;
 
 }
 
-.header-container {
+
+.header-logo{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap:wrap;
+  }
+
+.header-logo img {
+  width: 400px;
 }
 
-.header-logo {
-  max-width:35%;
-  margin: 3rem 0rem 10rem 7rem;
-}
-
-.header-container h1 {
+.header-logo h1 {
   display: block;
   font-family: 'Spectral', serif;
   font-style: italic;
@@ -30,21 +35,31 @@ header {
   margin: 0;
 }
 
-.header-logo img{
-  max-width: 400px;
-  display: block;
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
 }
 
-/* .checkout {
-  width: 3em;
-  margin: 3rem 7rem 0 0;
+.button-container {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  width: 10em;
 }
 
-.cash-cart {
-  display: block;
-  float: left;
+.checkout-button {
+  font-weight: bold;
+  font-size: 15px;
+  background-color:rgb(126, 170, 71);
+  border-radius: 2px;
+  border-style: none;
+  padding: .25em;
   color: white;
-} */
+  outline: inherit;
+  cursor:pointer;
+}
 
 .container {
   margin: auto;
@@ -225,6 +240,7 @@ form {
 }
 
 footer {
+  max-height: 420px;
   justify-content: center;
   background-color: rgb(19, 53, 83);
   color: white;
@@ -261,6 +277,17 @@ footer img {
       display: none;
 
     }
+    header{
+      background-image: url(/images/header-image-800w.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 250px;
+    }
+    .header-logo h1 {
+      font-size: 1rem;
+    }
+
 }
 
 
@@ -270,5 +297,21 @@ footer img {
   }
     .dog-card{
       width: 100%;
+  }
+
+  header{
+    background-image: url(/images/header-image-600w.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+  }
+
+  .header-logo img {
+    width: 250px;
+  }
+
+  .header-logo h1 {
+    display: none;
   }
 }
