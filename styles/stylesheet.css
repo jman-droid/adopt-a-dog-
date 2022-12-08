@@ -4,38 +4,20 @@
 
 header {
   background-image: url(/images/header-image.jpg);
-  background: cover;
   background-repeat: no-repeat;
-<<<<<<< Updated upstream
-  max-height: 420px;
-
-}
-
-.header-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.header-logo {
-  max-width:35%;
-  margin: 3rem 0rem 10rem 7rem;
-}
-
-.header-container h1 {
-=======
-  background-position: top;
-  background-color: black;
-  height: 325px;
+  height: 300px;
+  background-size: cover;
   width: 100%;
-  padding: 5em;
+
 }
+
+
 
 header img {
   width: 400px;
 }
 
 header h1 {
->>>>>>> Stashed changes
   display: block;
   font-family: 'Spectral', serif;
   font-style: italic;
@@ -46,35 +28,33 @@ header h1 {
   width: 400px;
 }
 
-<<<<<<< Updated upstream
 .header-logo img{
   max-width: 400px;
-  display: block;
 }
 
-/* .checkout {
-  width: 3em;
-  margin: 3rem 7rem 0 0;
-}
-
-.cash-cart {
-  display: block;
-  float: left;
-=======
 .header-logo {
-  width:200px;
+  padding: 3rem;
 }
 
-.checkout {
-  width: 75px;
-}
 
 .button-container {
   float: right;
-  padding-top: 1em;
-  width: 100px;
+  padding-top: 2rem;
   padding-bottom: 3rem;
+  padding-right: 15rem;
 
+}
+
+.checkout {
+  width: 1.5rem;
+
+}
+#cart-total {
+  color: #ADD8E6;
+}
+
+.checkout-total p {
+  padding-left: .5rem;
 }
 
 .checkout-button {
@@ -83,10 +63,9 @@ header h1 {
   background-color:rgb(126, 170, 71);
   border-radius: 2px;
   border-style: none;
-  padding: .5em;
->>>>>>> Stashed changes
+  padding: 0.5em 3rem 0.5rem 3rem;
   color: white;
-} */
+}
 
 .container {
   margin: auto;
@@ -349,17 +328,13 @@ footer img {
     }
     .aside-container{
       display: none;
-<<<<<<< Updated upstream
 
     }
-=======
-    }
+
     aside {
       display: none;
     }
 
->>>>>>> Stashed changes
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -370,8 +345,7 @@ footer img {
   .wrapper, .dogs-wrapper{
     width: 100%;
   }
-<<<<<<< Updated upstream
-=======
+
 
   .dog-card{
     width: 100%;
@@ -395,7 +369,3 @@ footer img {
 
 
   }
-
-
->>>>>>> Stashed changes
-}

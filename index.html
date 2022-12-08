@@ -7,51 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <script src="javascript/dog-info.js"charset="utf-8"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
   <div class="container">
 
-<<<<<<< Updated upstream
-      <header>
-        <div class="header-container">
-          <div class="header-logo">
-              <img src="images/adoptadog-logo.svg" alt="">
-              <h1>Seattle’s premiere dog adoption agency</h1>
-          </div>
-          <!-- <div class="checkout">
-              <div class="cash-cart">
-                <img src="images/cart-icon.svg" alt="">
-                <p>$123.45</p>
-              </div>
-          </div> -->
-        </div>
-      </header>
-
-      <nav>
-        <a href="index.html">Home /</a>
-        <a href="dogs.html">Dogs /</a>
-        <a href="blog.html">Blog</a>
-      </nav>
-=======
     <header>
->>>>>>> Stashed changes
+
 
       <div class="button-container">
         <img class="checkout" src="images/cart-icon.svg" alt="">
-        <a href="checkout.html">
-        <button class="checkout-button">Checkout</button>
-        </a>
+        <p id="cart-total">$0</p>
+        <a href="checkout.html"><button class="checkout-button">Checkout</button></a>
       </div>
 
       <div class="header-logo">
-
         <img src="images/adoptadog-logo.svg" alt="">
         <h1>Seattle’s premiere dog adoption agency</h1>
-
       </div>
 
 
@@ -63,31 +37,31 @@
         <a href="blog.html">Blog</a>
       </nav>
 
-    <aside>
+      <aside>
 
-      <h2>From Our Blog</h2>
-      <div class="blog-card">
-        <img src="images/blog-1.jpg" alt="">
-        <h3>Traveling With Your Dog</h3>
-        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-        <a href="blog.html">Read more >></a>
-      </div>
+        <h2>From Our Blog</h2>
+        <div class="blog-card">
+          <img src="images/blog-1.jpg" alt="">
+          <h3>Traveling With Your Dog</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </div>
 
-      <div class="blog-card">
-        <img src="images/blog-2.jpg" alt="">
-        <h3>How To Walk Multiple Dogs</h3>
-        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-        <a href="blog.html">Read more >></a>
-      </div>
+        <div class="blog-card">
+          <img src="images/blog-2.jpg" alt="">
+          <h3>How To Walk Multiple Dogs</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </div>
 
-      <div class="blog-card">
-        <img src="images/blog-3.jpg" alt="">
-        <h3>Teach Your Dog To Fetch!</h3>
-        <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-        <a href="blog.html">Read more >></a>
-      </div>
+        <div class="blog-card">
+          <img src="images/blog-3.jpg" alt="">
+          <h3>Teach Your Dog To Fetch!</h3>
+          <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </div>
 
-    </aside>
+      </aside>
 
     <main>
       <article class="intro">
@@ -100,64 +74,64 @@
 
     <div class="wrapper">
 
-      <article class="dog-card">
+      <article class="dog-card"  data-fee="140">
         <img src="images/murphy-card.jpg" onclick="showInfo('Murphy','Terrier',140)" alt="">
         <div class="card-container">
           <h3>Murphy</h3>
           <p><strong>Cost to adopt:</strong> $140</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
-      <article class="dog-card">
+      <article class="dog-card" data-fee="200">
         <img src="images/poppy-card.jpg" alt="">
         <div class="card-container">
           <h3>Poppy</h3>
           <p><strong>Cost to adopt:</strong> $200</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
-      <article class="dog-card">
+      <article class="dog-card" data-fee="150">
         <img src="images/jack-card.jpg" alt="">
         <div class="card-container">
           <h3>Jack</h3>
           <p><strong>Cost to adopt:</strong> $150</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
 
-      <article class="dog-card">
+      <article class="dog-card"  data-fee="600">
         <img src="images/duffy-card.jpg" alt="">
         <div class="card-container">
           <h3>Duffy</h3>
           <p><strong>Cost to adopt:</strong> $600</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
-      <article class="dog-card">
+      <article class="dog-card"  data-fee="400">
         <img src="images/lucas-card.jpg" alt="">
         <div class="card-container">
           <h3>Lucas</h3>
           <p><strong>Cost to adopt:</strong> $400</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
-      <article class="dog-card">
+      <article class="dog-card"  data-fee="750">
         <img src="images/jake-card.jpg" alt="">
         <div class="card-container">
           <h3>Jake</h3>
           <p><strong>Cost to adopt:</strong> $750</p>
           <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-          <button class="card-button" onclick="totalAdder(fee)">Adopt</button>
+          <button class="card-button">Adopt</button>
         </div>
       </article>
 
@@ -181,5 +155,7 @@
 
       </footer>
     </div>
+  <script src="javascript/dog-info.js"charset="utf-8"></script>
+
   </body>
 </html>
