@@ -1,0 +1,5 @@
+Browser Testing:
+Brave Browser (Chromium), Safari, and Firefox all work smoothly in desktop mode (ie (3024 × 1964) on an Apple MacBook Pro M1 pro computer. 
+
+Changes Made:
+Updated media queries for index page such that the aside is not displayed starting at 1283px (previously 992px). This prevents the aside element from overlapping with the main content of the page, thus making it more user-friendly, aesthetically pleasing, and accessible. Additionally, I created a separate version of the header-logo that is mobile only. Editing in Figma, I cropped out the "Adoptadog" Section, leaving just the dog silhouette. While this might make it confusing for users on devices with a width of 600px and smaller, the title will remain in the tab of all browser windows. It does help reduce how much information is displayed in the header, which helps too. 
