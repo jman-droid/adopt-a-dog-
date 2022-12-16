@@ -12,11 +12,6 @@ header {
 }
 
 
-
-header img {
-  width: 400px;
-}
-
 header h1 {
   display: block;
   font-family: 'Spectral', serif;
@@ -28,15 +23,17 @@ header h1 {
   width: 400px;
 }
 
-.header-logo img{
+.desktop-logo{
   max-width: 400px;
 }
 
-.header-logo {
+.desktop-logo {
   padding: 3rem;
 }
 
-
+.mobile-logo {
+  display:none;
+}
 .button-container {
   float: right;
   padding-top: 2rem;
@@ -131,7 +128,6 @@ aside img {
 }
 
 .intro img{
-  width: 700px;
   height: 310px;
   object-fit: cover;
 }
@@ -318,7 +314,11 @@ footer img {
   width: 20%;
 
 }
-
+@media only screen and (max-width: 1283px) {
+  aside {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px){
 
     .wrapper, .dogs-wrapper{
@@ -327,14 +327,39 @@ footer img {
     .dog-card{
       width: 18rem;
     }
-    .aside-container{
-      display: none;
+
+    .button-container {
+      float: right;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      padding-right: 3rem;
 
     }
 
-    aside {
-      display: none;
-    }
+@media screen and (max-width: 768px){
+
+
+  header{
+    height: 200px;
+
+  }
+
+  .intro {
+    width: 40rem;
+  }
+
+  .desktop-logo {
+    width: 300px;
+  }
+
+  .desktop-logo h1 {
+    font-size: 1.2rem;
+  }
+
+  nav{
+    padding-left: 5em;
+  }
+}
 
 
 
@@ -347,7 +372,6 @@ footer img {
     width: 100%;
   }
 
-
   .dog-card{
     width: 100%;
   }
@@ -356,17 +380,23 @@ footer img {
     display: none;
   }
 
-  .header-logo{
+
+  nav{
+    padding-left: 2em;
+  }
+
+
+  .desktop-logo{
     display: none;
-  }
-
-  header{
-    height: 200px;
 
   }
 
-  .button-container {
-    float: left;
-
-
+  .mobile-logo{
+    display: block;
+    width: 12rem;
+    padding: 2rem 0rem 0rem 4rem;
   }
+
+
+
+}
